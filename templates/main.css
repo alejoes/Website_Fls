@@ -1,0 +1,12 @@
+p{
+    color: black;
+    font-size: 20px;
+}
+
+.navbar .navbar-nav > a .navbar-item ,
+.navbar .navbar-brand{
+        color: black;
+}
+
+
+

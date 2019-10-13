@@ -46,9 +46,9 @@
     <!-- HOME PAGE  -->
     <div class="container">
         <div class="row">
-            <div class="container col-8">
+            <div class="container-fluid col-xs-12 col-md-8">
                 <h2>Summary: Lattitude vs. X</h2>
-                <div><img style="float: left; margin: 10px" src="../static/temp.jpg" alt="Temperature (F) vs. Lattitude" width="292" height="292">
+                <div><img style="float:left; margin: 10px" src="../static/temp.jpg" class="img-fluid" alt="Temperature (F) vs. Lattitude" width="292" height="292">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio veniam distinctio debitis 
                     tempora fuga, nam architecto deleniti! Deserunt similique, id tempora minus aut repudiandae? 
                     Maiores dignissimos molestiae quae enim. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -85,19 +85,28 @@
                 
                 
             </div>
-            <div class="container col-4">
+            <div class="container col-xs-4 col-md-4">
                 <h2>Visualizations</h2>
                 <div class="row">
-                    <div id="icons"><a href="#"><img src="../static/temp.jpg" height="170px" width="170px"/></a></div>
-                    <div id="icons"><a href="#"><img src="../static/cloud.jpg" height="170px" width="170px"></a></div>
+                    <div class="column">
+                        <div id="icons"><a href="#"><img src="../static/temp.jpg" style="width:100%"></a></div>
+                    </div>
+                    <div class="column">
+                        <div id="icons"><a href="#"><img src="../static/cloud.jpg" style="width:100%"></a></div> 
+                    </div>    
                 </div>
-        
                 <div class="row">
-                    <div id="icons"><a href="#"><img src="../static/hum.jpg" height="170px" width="170px"/></a></div>
-                    <div id="icons"><a href="#"><img src="../static/windi.jpg"height="170px" width="170px"/></a></div>
+                    <div class="column">
+                        <div id="icons"><a href="#"><img src="../static/hum.jpg" style="width:100%"/></a></div>
+                    </div>
+                    <div class="column">
+                        <div id="icons"><a href="#"><img src="../static/windi.jpg" style="width:100%"/></a></div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div id="icons"><a href="#"><img src="../static/ax.jpg" height="230px" width="420px"/></a></div>
+                    
+                    <div id="icons"><a href="#"><img src="../static/ax.jpg" style="width:100%"/></a></div>
+                       
                 </div>
             </div>
         </div>

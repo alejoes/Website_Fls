@@ -1,8 +1,122 @@
-{% extends "layout.html" %}
-{% block temp %}
-    <title>Max. Temp.</title>
-    <p>la temp</p>
-    <img src="/static/temp.jpg" alt="Temp. vs Lattitude">
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- CSS Connection -->
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css')}}"> -->
+    
+    
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-info">
+            <div class="container">
+                <a class="navbar-brand"  href="/">Lattitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Plots</a>
+                            <div class="dropdown-menu">
+                                <a href="/maxTemp" class="dropdown-item">Max Temperature</a>
+                                <a href="/Humidity" class="dropdown-item">Humidity</a>
+                                <a href="/Cloudiness" class="dropdown-item">Cloudiness</a>
+                                <a href="/WindSpeed" class="dropdown-item">Wind Speed</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="/Comparison" class="nav-link">Comparison</a></li>
+                        <li class="nav-item"><a href="/Data" class="nav-link">Data</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
+    </header>       
+
+    <!-- HOME PAGE  -->
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid col-xs-12 col-md-8">
+                <h2>Max. Temperature</h2>
+                <div><img style="float: center; margin: 10px" src="../static/temp.jpg" class="img-fluid" alt="Temperature (F) vs. Lattitude">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio veniam distinctio debitis 
+                    tempora fuga, nam architecto deleniti! Deserunt similique, id tempora minus aut repudiandae? 
+                    Maiores dignissimos molestiae quae enim. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quae eos officia exercitationem voluptatibus debitis non commodi possimus in eius voluptates 
+                    quia, voluptate sapiente laborum ea error architecto soluta. Dolorum, itaque.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam corrupti modi, 
+                    aspernatur quam obcaecati eaque amet magnam optio laboriosam. Provident, laborum consequatur 
+                    asperiores aut ipsam at temporibus culpa maxime?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis optio veniam distinctio debitis 
+                    tempora fuga, nam architecto deleniti! Deserunt similique, id tempora minus aut repudiandae? 
+                    Maiores dignissimos molestiae quae enim. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quae eos officia exercitationem voluptatibus debitis non commodi possimus in eius voluptates 
+                    quia, voluptate sapiente laborum ea error architecto soluta. Dolorum, itaque.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam corrupti modi, 
+                    aspernatur quam obcaecati eaque amet magnam optio laboriosam. Provident, laborum consequatur 
+                    asperiores aut ipsam at temporibus culpa maxime?
+                    
+                </div>
+                
+                
+            </div>
+            <div class="container col-xs-12 col-md-4">
+                    <h2>Visualizations</h2>
+                    <div class="row">
+                        <div class="column">
+                            <div id="icons"><a href="#"><img src="../static/temp.jpg" style="width:100%"></a></div>
+                        </div>
+                        <div class="column">
+                            <div id="icons"><a href="#"><img src="../static/cloud.jpg" style="width:100%"></a></div> 
+                        </div>    
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div id="icons"><a href="#"><img src="../static/hum.jpg" style="width:100%"/></a></div>
+                        </div>
+                        <div class="column">
+                            <div id="icons"><a href="#"><img src="../static/windi.jpg" style="width:100%"/></a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                        <div id="icons"><a href="#"><img src="../static/ax.jpg" style="width:100%"/></a></div>
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
 
 
-{% endblock %}
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+
+
+
+</html>
+
